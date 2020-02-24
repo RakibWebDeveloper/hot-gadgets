@@ -95,7 +95,7 @@ body {
 
 .buy-now-button {
     background-color: var(--color-dark);
-    padding: 1rem 2rem;
+    padding: .7rem 1.2rem;
     border-radius: 10px;
     color: #ffffff;
     border:2px solid var(--color-dark);
@@ -106,7 +106,6 @@ body {
 .buy-now-button:hover {
     border:2px solid var(--color-dark);
     background-color: #ffffff;
-    padding: 1rem 2rem;
     border-radius: 10px;
     color: var(--color-dark);
 }
@@ -167,7 +166,7 @@ body {
 .category .box {
     height: 230px;
     width: 230px;
-    box-shadow: 5px 5px 10px lightgray;
+    box-shadow: 0 5px 10px lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,8 +181,8 @@ body {
 }
 
 .category .box:hover {
-    transform: scale(1.01) translateY(-1rem);
-    box-shadow: 10px 10px 20px lightgray;
+    transform: scale(1.01) translateY(-5px);
+    box-shadow: 10px 10px 30px lightgray;
 }
 
 .category .box.first-box {
@@ -215,8 +214,13 @@ body {
     background: var(--color-gradient);
 }
 
+.about-us {
+    margin: 10rem 0;
+}
 
-
+.about-us p {
+    font-size: 1.4rem;
+}
 
 
 
