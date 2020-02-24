@@ -63,6 +63,12 @@ body {
     background: var(--color-gradient);
 }
 
+.para {
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+}
+
+
 /* ///////////////////////////// */
 /* Header Section */
 /* ///////////////////////////// */
@@ -71,17 +77,10 @@ body {
 .header {
     margin-top: 1rem;
     background-image: url('../img/background-image(2).jpg');
-    background-size: 10%;
+    background-size: 8%;
     background-repeat: no-repeat;
     background-position:left bottom;
 
-}
-
-.header .container {
-    background-image: url('../img/background-image(1).jpg');
-    background-size: 7% 65%;
-    background-repeat: no-repeat;
-    background-position:42% 55%;
 }
 
 .header .nav-item {
@@ -114,29 +113,28 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.carousel-item .para {
-    font-size: 1.4rem;
-    margin-bottom: 5rem;
-}
 
 .carousel-item {
-    /* margin-top: -3rem; */
     margin-bottom: 4rem;
+    background-image: url('../img/background-image\(1\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8%;
+    background-position:42% 55%;
 }
 
 .carousel-indicators li {
-    display: inline-block;
     height: 8px;
     width: 12px;
     background-color: grey;
-    border-radius: 500px;
+    border: none;
+    border-radius: 6px;
 }
 .carousel-indicators li.active {
-    display: inline-block;
     height: 8px;
     width: 30px;
     background-image: var(--color-gradient);
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 
