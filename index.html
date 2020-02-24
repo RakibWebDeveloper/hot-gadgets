@@ -36,13 +36,17 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="#product">Product</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#category">Categories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#about-us">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
                         </li>
 
                     </ul>
@@ -53,7 +57,7 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner mb-5">
@@ -109,7 +113,7 @@
     <!-- End Header Section -->
 
     <!-- Start Product section -->
-    <div class="product">
+    <div id="product">
         <!-- Smartphone section -->
         <div class="container">
             <div class="d-flex justify-content-between">
@@ -206,7 +210,7 @@
     <!-- End Product section -->
 
     <!-- Category Section -->
-    <div class="category">
+    <div id="category">
         <div class="container">
             <h1 class="category-title text-center">Categories</h1>
             <div class="d-flex justify-content-center ">
@@ -256,31 +260,40 @@
     <!-- End Category Section -->
 
     <!-- About us section -->
-    <div class="about-us">
+    <div id="about-us">
         <div class="container">
-            <h1 class="category-title text-center">About Us</h1>
+            <h1 class="text-center">About Us</h1>
             <div class="d-flex justify-content-center ">
                 <br>
                 <div class="line"></div>
             </div>
             <div class="row pt-5">
                 <div class="col-lg-4">
-                    <h2>Our Story</h2>
+                    <div class="my-card p-5">
+                        <h2>Our Story</h2>
                     <hr>
-                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptates dicta aliquam voluptatibus blanditiis expedita vero deleniti quisquam! Reiciendis, quisquam.</p>
+                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptates
+                        dicta aliquam voluptatibus blanditiis expedita vero deleniti quisquam! Reiciendis, quisquam.</p>
                     <button class="buy-now-button">Learn More &rarr;</button>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <h2>Our Mission</h2>
+                    <div class="my-card p-5">
+                        <h2>Our Mission</h2>
                     <hr>
-                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptates dicta aliquam voluptatibus blanditiis expedita vero deleniti quisquam! Reiciendis, quisquam.</p>
+                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptates
+                        dicta aliquam voluptatibus blanditiis expedita vero deleniti quisquam! Reiciendis, quisquam.</p>
                     <button class="buy-now-button">Learn More &rarr;</button>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <h2>Our Goal</h2>
+                    <div class="my-card p-5">
+                        <h2>Our Goal</h2>
                     <hr>
-                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptates dicta aliquam voluptatibus blanditiis expedita vero deleniti quisquam! Reiciendis, quisquam.</p>
+                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptates
+                        dicta aliquam voluptatibus blanditiis expedita vero deleniti quisquam! Reiciendis, quisquam.</p>
                     <button class="buy-now-button">Learn More &rarr;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,9 +301,55 @@
 
     <!-- End about us section -->
 
+    <!-- Start Contact us section -->
+    <div id="contact-us">
+        <div class="container">
+            <h1 class="text-center">Contact Us</h1>
+            <div class="d-flex justify-content-center ">
+                <br>
+                <div class="line"></div>
+            </div>
+            
+            <div class="row pt-5">
+                
+                <div class="col-lg-6">
+                    <div class="my-card p-5">
+                        <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Email</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Subject</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">How we can help?</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button class="buy-now-button">Submit &rarr;</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-card">
+                    <!--Google map-->
+                        <div id="map-container-google-1" class="map-container mb-4">
+                        <iframe src="https://maps.google.com/maps?q=dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <!--Google Maps-->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End Contact us section -->
+
     <!-- Start footer -->
     <footer class="text-center">
-        <small > &copy;Hot-Gadgets 2020, all rights reserved.</small>
+        <small> &copy;Hot-Gadgets 2020, all rights reserved.</small>
     </footer>
     <!-- Start footer -->
     <!-- Bootstrap Script -->

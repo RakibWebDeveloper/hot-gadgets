@@ -114,16 +114,16 @@ body {
 /* Product Section */
 /* ///////////////////////////// */
 
-.product {
+#product {
     margin: 10rem 0;
 }
 
 
-.product .card-deck {
+#product .card-deck {
     margin-top: 2.5rem;
     margin-bottom: 10rem;
 }
-.product .card-deck .card {
+#product .card-deck .card {
     border: none;
     padding: 3rem;
     text-align: center;
@@ -132,20 +132,20 @@ body {
     border-radius: 10px;
 }
 
-.product .card-deck .card .card-title {
+#product .card-deck .card .card-title {
     margin: 1.5rem 0;
 }
-.product .card-deck .card .card-text {
+#product .card-deck .card .card-text {
     font-size: 1.4rem;
     margin-bottom: 3rem;
 }
 
-.product .card-deck .card .card-footer {
+#product .card-deck .card .card-footer {
     border: none;
     background-color: transparent;
 }
 
-.product .see-all {
+#product .see-all {
     background-image: var(--color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -156,14 +156,14 @@ body {
 /* Category section */
 /* ////////////////////////// */
 
-.category {
+#category {
     margin: 10rem 0;
 }
 
-.category .row {
+#category .row {
     padding-top: 2rem;
 }
-.category .box {
+#category .box {
     height: 230px;
     width: 230px;
     box-shadow: 0 5px 10px lightgray;
@@ -180,16 +180,16 @@ body {
     transition: all .4s ease;
 }
 
-.category .box:hover {
+#category .box:hover {
     transform: scale(1.01) translateY(-5px);
     box-shadow: 10px 10px 30px lightgray;
 }
 
-.category .box.first-box {
+#category .box.first-box {
     border-radius: 0px 30px 0px 30px;
 }
 
-.category .box img:hover {
+#category .box img:hover {
     animation: shake 0.9s;
 }
 
@@ -198,12 +198,12 @@ body {
 } */
 
 
-.category .box .para {
+#category .box .para {
     font-size: 2rem;
     margin-top: 2rem;
 }
 
-.category .category-image {
+#category #category-image {
     width: 650px;
 }
 
@@ -214,19 +214,44 @@ body {
     background: var(--color-gradient);
 }
 
-.about-us {
+
+/* About us section */
+#about-us {
     margin: 10rem 0;
 }
 
-.about-us p {
-    font-size: 1.4rem;
+#about-us p {
+    font-size: 1.5rem;
 }
 
 
+/* Contact us */
 
 
+#contact-us {
+    margin: 10rem 0;
+}
 
 
+.map-container {
+    height: 250px;
+    position: relative;
+  }
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+
+  .my-card {
+    padding: 3rem 1rem;
+    box-shadow: 0 10px 20px lightgray;
+    border-radius: 10px;
+}
 
 
 
