@@ -2,7 +2,7 @@
 :root {
     --color-primary-dark: #FF9C35;
     --color-primary-light: #FFD019;
-    --color-dark: rgb(0, 0, 0);
+    --color-dark: rgba(0, 0, 0, 0.9);
     --color-gradient: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light))
 }
 
@@ -35,13 +35,13 @@ body {
 .my-card {
     padding: 3rem 1rem;
     box-shadow: 0 10px 20px lightgray;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .buy-now-button {
     background-color: var(--color-dark);
     padding: .7rem 1.2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #ffffff;
     border:2px solid var(--color-dark);
 
@@ -51,7 +51,7 @@ body {
 .buy-now-button:hover {
     border:2px solid var(--color-dark);
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--color-dark);
 }
 
@@ -70,8 +70,19 @@ body {
 /* Navbar */
 .header {
     margin-top: 1rem;
+    background-image: url('../img/background-image(2).jpg');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position:left bottom;
+
 }
 
+.header .container {
+    background-image: url('../img/background-image(1).jpg');
+    background-size: 7% 65%;
+    background-repeat: no-repeat;
+    background-position:42% 55%;
+}
 
 .header .nav-item {
     margin-left: 4rem;
@@ -118,6 +129,7 @@ body {
     height: 8px;
     width: 12px;
     background-color: grey;
+    border-radius: 500px;
 }
 .carousel-indicators li.active {
     display: inline-block;
@@ -148,7 +160,7 @@ body {
     text-align: center;
 
     box-shadow: 5px 10px 30px lightgrey;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #product .card-deck .card .card-title {
@@ -196,12 +208,12 @@ body {
 
     cursor: pointer;
 
-    transition: all .4s ease;
+    transition: all .3s ease;
 }
 
 #category .box:hover {
-    transform: scale(1.01) translateY(-5px);
-    box-shadow: 10px 10px 30px lightgray;
+    transform: scale(1.01);
+    box-shadow: 5px 10px 20px lightgray;
 }
 
 #category .box.first-box {
@@ -235,9 +247,11 @@ body {
 }
 
 
-
-
+/* ///////////////////////////// */
 /* About us section */
+/* ///////////////////////////// */
+
+
 #about-us {
     margin: 10rem 0;
 }
@@ -247,8 +261,9 @@ body {
 }
 
 
-/* Contact us */
-
+/* ///////////////////////////// */
+/* Contact us section */
+/* ///////////////////////////// */
 
 #contact-us {
     margin: 10rem 0;
@@ -263,16 +278,30 @@ body {
   .map-container iframe {
     left: 0;
     top: 0;
-    height: 100%;
+    height: 298px;
     width: 100%;
     position: absolute;
   }
 
 
+  .name {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
 
+    transition: all .2s;
+}
+.name:hover {
+    box-shadow: 0 1rem 2rem lightgray;
+    transform: rotate(5deg) scale(1.1);
+    text-decoration: none;
 
-
-
+    padding: 0 1rem;
+    background-image: var(--color-gradient);
+    color: whitesmoke;
+    border-radius: 2px;
+}
 
 
 
