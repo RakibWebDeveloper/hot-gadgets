@@ -2,7 +2,7 @@
 :root {
     --color-primary-dark: #FF9C35;
     --color-primary-light: #FFD019;
-    --color-dark: black;
+    --color-dark: rgb(0, 0, 0);
     --color-gradient: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light))
 }
 
@@ -27,6 +27,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     font-size: 1.6rem;
+    color: var(--color-dark);
 }
 /* ///////////////////////////// */
 /* Header Section */
@@ -34,14 +35,12 @@ body {
 
 /* Navbar */
 .header {
-    margin-top: 3rem;
-}
-.header .navbar .navbar-brand {
-    padding: 5px;
+    margin-top: 1rem;
 }
 
+
 .header .nav-item {
-    margin: 0 1.5rem;
+    margin-left: 4rem;
 }
 
 .header .nav-item .nav-link {
@@ -61,4 +60,53 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Carousel  */
+
+.carousel-header {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.carousel-para {
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+}
+
+.carousel-item {
+    /* margin-top: -3rem; */
+    margin-bottom: 4rem;
+}
+
+
+.carousel-indicators li {
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    background-color: grey;
+}
+.carousel-indicators li.active {
+    display: inline-block;
+    height: 8px;
+    width: 30px;
+    background-image: var(--color-gradient);
+    border-radius: 10px;
+}
+
+.buy-now-button {
+    background-color: var(--color-dark);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #ffffff;
+    border: none;
+}
+
+.buy-now-button:hover {
+    border:2px solid;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: var(--color-dark);
+    border: none;
 }
